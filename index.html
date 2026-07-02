@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo's Library 📚</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{
+            background-color:#fff7ee;
+            font-family:"PingFang SC","Microsoft Yahei",sans-serif;
+            color:#5a3e2b;
+            padding-bottom:60px;
+        }
+        header{
+            background:linear-gradient(135deg,#ffd6b3,#ffc896);
+            text-align:center;
+            padding:40px 20px;
+            border-radius:0 0 40px 40px;
+            box-shadow:0 6px 18px #ffdfc2;
+        }
+        h1{
+            font-size:30px;
+            color:#fff;
+            text-shadow:0 2px 4px #ffa968;
+            margin-bottom:8px;
+        }
+        .subtitle{
+            color:#ffffffee;
+            font-size:16px;
+        }
+        .search-wrap{
+            width:92%;
+            max-width:720px;
+            margin:30px auto;
+            position:relative;
+        }
+        #search{
+            width:100%;
+            padding:14px 20px;
+            border-radius:30px;
+            border:2px solid #ffd2aa;
+            font-size:16px;
+            outline:none;
+            background:#fff;
+        }
+        nav{
+            display:flex;
+            flex-wrap:wrap;
+            gap:12px;
+            justify-content:center;
+            margin-bottom:35px;
+        }
+        .nav-item{
+            padding:9px 20px;
+            border-radius:25px;
+            background:#ffe3cb;
+            font-size:15px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+        .nav-item.active{
+            background:#ffb370;
+            color:#fff;
+        }
+        .container{
+            width:94%;
+            max-width:1200px;
+            margin:0 auto;
+        }
+        .title-line{
+            font-size:20px;
+            margin:30px 0 15px;
+            border-left:5px solid #ff9e58;
+            padding-left:12px;
+        }
+        .book-list{
+            display:grid;
+            grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+            gap:22px;
+        }
+        .book-card{
+            background:#fff;
+            border-radius:18px;
+            overflow:hidden;
+            box-shadow:0 4px 12px #ffe8d4;
+            transition:0.3s ease;
+        }
+        .book-card:hover{
+            transform:translateY(-8px);
+        }
+        .book-pic{
+            width:100%;
+            height:190px;
+            background:#fff0e3;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:13px;
+            color:#c9a88c;
+        }
+        .book-text{
+            padding:14px;
+        }
+        .book-name{
+            font-size:14px;
+            font-weight:500;
+            margin-bottom:6px;
+            line-height:1.4;
+        }
+        .book-tag{
+            font-size:12px;
+            padding:2px 8px;
+            border-radius:6px;
+            background:#ffeede;
+            color:#ff8844;
+            display:inline-block;
+            margin:2px 0;
+        }
+        .book-tag.unopened{
+            background:#e6f4ff;
+            color:#2478d2;
+        }
+        .hide{display:none;}
+        footer{
+            text-align:center;
+            margin-top:60px;
+            color:#c2a48c;
+            font-size:14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🐰 Leo's Library</h1>
+        <p class="subtitle">Exclusive English Picture Book Collection · One-click Book Search</p>
+    </header>
+
+    <div class="search-wrap">
+        <input id="search" placeholder="Search book name...">
+    </div>
+
+    <nav>
+        <div class="nav-item active" data-val="all">All Books</div>
+        <div class="nav-item" data-val="worm">Caterpillar Readable Books</div>
+        <div class="nav-item" data-val="unopen">Unopened Books</div>
+    </nav>
+
+    <div class="container">
+        <h2 class="title-line">📖 Caterpillar Readable English Books (Total: 26)</h2>
+        <div class="book-list" id="worm-list">
+            <div class="book-card" data-name="macking faces" data-type="worm">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">macking faces</div>
+                    <span class="book-tag">Caterpillar Readable</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="global babies" data-type="worm">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">global babies</div>
+                    <span class="book-tag">Caterpillar Readable</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="goodnight moon" data-type="worm">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">goodnight moon</div>
+                    <span class="book-tag">Author: Margaret Wise Brown</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="where is baby's belly button" data-type="worm">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">where is baby's belly button</div>
+                    <span class="book-tag">Author: Karen Kat</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="peek-a-baby" data-type="worm">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">peek-a-baby</div>
+                    <span class="book-tag">Author: Karen Kat</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="恐龙手提礼盒-10册" data-type="worm">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">Dinosaur Gift Box - 10 Books</div>
+                    <span class="book-tag">Sandcastle Books</span>
+                    <span class="book-tag">Chunky Board Book</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="clock" data-type="worm">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">clock</div>
+                    <span class="book-tag">Caterpillar Readable</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="maisy's little library 小鼠波波" data-type="worm">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">maisy's little library</div>
+                    <span class="book-tag">Walker Books</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="little library-4册" data-type="worm">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">little library - 4 Books</div>
+                    <span class="book-tag">Ladybird</span>
+                    <span class="book-tag">Baby Touch Book</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="my dad" data-type="worm">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">my dad</div>
+                    <span class="book-tag">Author: Anthony Browne</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="my mum" data-type="worm">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">my mum</div>
+                    <span class="book-tag">Author: Anthony Browne</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="the very hungry caterpillar" data-type="worm">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">the very hungry caterpillar</div>
+                    <span class="book-tag">Author: Eric Carle</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="dear zoo" data-type="worm">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">dear zoo</div>
+                    <span class="book-tag">Author: Rod Campbell</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="I am a bunny" data-type="worm">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">I am a bunny</div>
+                    <span class="book-tag">Author: Richard Scarry</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="brown bear,brown bear,what do you see" data-type="worm">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">brown bear,brown bear,what do you see</div>
+                    <span class="book-tag">Author: Bill Martin Jr / Eric Carle</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="from head to toe" data-type="worm">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">from head to toe</div>
+                    <span class="book-tag">Author: Eric Carle</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="english apple-10册" data-type="worm">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">english apple - 10 Books</div>
+                    <span class="book-tag">Bluesky</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="my first reading library-50册" data-type="worm unopen">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">my first reading library - 50 Books</div>
+                    <span class="book-tag unopened">Unopened</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="good night， I love you-6册" data-type="worm">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">good night， I love you - 6 Books</div>
+                    <span class="book-tag">Author: Caroline Jayne Church</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="honey english pic books-20册" data-type="worm">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">honey english pic books - 20 Books</div>
+                    <span class="book-tag">Season 1</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="see touch feel" data-type="worm">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">see touch feel</div>
+                    <span class="book-tag">Priddy Books · Sensory Book</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="look look" data-type="worm">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">look look</div>
+                    <span class="book-tag">Author: Peter Linenthal</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="does a kangaroo have a mother, too" data-type="worm">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">does a kangaroo have a mother, too</div>
+                    <span class="book-tag">Author: Eric Carle</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="the very busy spider" data-type="worm">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">the very busy spider</div>
+                    <span class="book-tag">Author: Eric Carle</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="today is Monday" data-type="worm">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">today is Monday</div>
+                    <span class="book-tag">Author: Eric Carle</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="polar bear,polar bear,what do you hear" data-type="worm">
+                <div class="book-pic">Cover to be added</div>
+                <div class="book-text">
+                    <div class="book-name">polar bear,polar bear,what do you hear</div>
+                    <span class="book-tag">Author: Eric Carle</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Leo's Library | Record Kids' Reading List Forever
+    </footer>
+
+    <script>
+        //分类筛选功能
+        const navs = document.querySelectorAll(".nav-item");
+        const cards = document.querySelectorAll(".book-card");
+        navs.forEach(nav=>{
+            nav.onclick=()=>{
+                navs.forEach(n=>n.classList.remove("active"));
+                nav.classList.add("active");
+                let t = nav.dataset.val;
+                cards.forEach(card=>{
+                    if(t==="all"){
+                        card.classList.remove("hide");
+                    }else if(t==="unopen"){
+                        card.classList.toggle("hide", !card.classList.contains('unopen'));
+                    }else{
+                        card.classList.toggle("hide", card.dataset.type !== t);
+                    }
+                })
+            }
+        })
+
+        //实时搜索功能
+        const input = document.getElementById("search");
+        input.oninput=()=>{
+            let key = input.value.toLowerCase();
+            cards.forEach(card=>{
+                let name = card.dataset.name.toLowerCase();
+                card.classList.toggle("hide", !name.includes(key));
+            })
+        }
+    </script>
+</body>
+</html>
