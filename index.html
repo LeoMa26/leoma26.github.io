@@ -12,10 +12,19 @@
             color:#3c573c;
             padding-bottom:60px;
             background-image:url('background.jpg');
-            background-size:45%;
-            background-position:right bottom;
+            background-size:120%;
+            background-position:right center;
             background-repeat:no-repeat;
             background-attachment:fixed;
+            position:relative;
+        }
+        /* 半透明遮罩，弱化背景图，防止喧宾夺主 */
+        body::before{
+            content:"";
+            position:fixed;
+            inset:0;
+            background-color:rgba(232, 248, 232, 0.72);
+            z-index:-1;
         }
         header{
             background:linear-gradient(135deg,#d7f6d7,#b9ecb9);
