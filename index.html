@@ -136,17 +136,14 @@
             display:inline-block;
             margin:2px 0;
         }
-        /* 书籍属性标签（出版社/类型） */
         .book-tag.info{
             background:#e4f7e4;
             color:#489948;
         }
-        /* 适龄标签 */
         .book-tag.age{
             background:#f1fbe0;
             color:#528c20;
         }
-        /* 新增：主题标签，区分样式 */
         .book-tag.theme{
             background:#fff2cc;
             color:#b37800;
@@ -170,7 +167,6 @@
         <input id="search" placeholder="Search book name...">
     </div>
 
-    <!-- 更新后导航【形态分类】 -->
     <nav>
         <div class="nav-item active" data-val="all">All Books</div>
         <div class="nav-item" data-val="bw">Black & White Visual Books</div>
@@ -181,59 +177,141 @@
     </nav>
 
     <div class="container">
-        <h2 class="title-line">📖 All Picture Books (Total: 43)</h2>
+        <h2 class="title-line">📖 All Picture Books (Total: 55 · Sorted A-Z)</h2>
         <div class="book-list" id="worm-list">
-            <!--1-->
-            <div class="book-card" data-name="making faces" data-type="other" data-theme="Early Learning">
-                <div class="book-pic" style="background-image:url('1.jpg');"></div>
+            <!-- A 开头 -->
+            <div class="book-card" data-name="alphabet" data-type="pushpullbook" data-theme="Alphabet & Words">
+                <div class="book-pic" style="background-image:url('39.jpg');"></div>
                 <div class="book-text">
-                    <div class="book-name">making faces</div>
-                    <span class="book-tag info">Toddler Learning</span>
+                    <div class="book-name">alphabet</div>
+                    <span class="book-tag info">Matthew Van Fleet</span>
+                    <span class="book-tag theme">Alphabet & Words</span>
+                    <span class="book-tag age">Recommended: 1–4 yrs</span>
+                </div>
+            </div>
+
+            <!-- B 开头 -->
+            <div class="book-card" data-name="baby loves" data-type="other" data-theme="Early Learning">
+                <div class="book-pic" style="background-image:url('48.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">baby loves</div>
+                    <span class="book-tag info">Abrams Appleseed</span>
+                    <span class="book-tag theme">Early Learning</span>
+                    <span class="book-tag age">Recommended: 0–2 yrs</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="baby's very first musical play book" data-type="noisybook" data-theme="Early Learning">
+                <div class="book-pic" style="background-image:url('31.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">baby's very first musical play book</div>
+                    <span class="book-tag info">Usborne</span>
                     <span class="book-tag theme">Early Learning</span>
                     <span class="book-tag age">Recommended: 0–3 yrs</span>
                 </div>
             </div>
-            <!--2-->
-            <div class="book-card" data-name="global babies" data-type="other" data-theme="Early Learning">
-                <div class="book-pic" style="background-image:url('2.jpg');"></div>
+            <div class="book-card" data-name="baby's very first noisy book farm" data-type="noisybook" data-theme="Animal Theme">
+                <div class="book-pic" style="background-image:url('28.jpg');"></div>
                 <div class="book-text">
-                    <div class="book-name">global babies</div>
-                    <span class="book-tag info">Toddler Learning</span>
-                    <span class="book-tag theme">Early Learning</span>
-                    <span class="book-tag age">Recommended: 0–2 yrs</span>
-                </div>
-            </div>
-            <!--3-->
-            <div class="book-card" data-name="goodnight moon" data-type="other" data-theme="Bedtime Story">
-                <div class="book-pic" style="background-image:url('3.jpg');"></div>
-                <div class="book-text">
-                    <div class="book-name">goodnight moon</div>
-                    <span class="book-tag info">Author: Margaret Wise Brown</span>
-                    <span class="book-tag theme">Bedtime Story</span>
+                    <div class="book-name">baby's very first noisy book farm</div>
+                    <span class="book-tag info">Usborne</span>
+                    <span class="book-tag theme">Animal Theme</span>
                     <span class="book-tag age">Recommended: 0–3 yrs</span>
                 </div>
             </div>
-            <!--4 liftflap-->
-            <div class="book-card" data-name="where is baby's belly button" data-type="liftflap" data-theme="Early Learning">
-                <div class="book-pic" style="background-image:url('4.jpg');"></div>
+            <div class="book-card" data-name="big box of brilliant books - 8 Books" data-type="littlelib" data-theme="Early Learning">
+                <div class="book-pic" style="background-image:url('55.jpg');"></div>
                 <div class="book-text">
-                    <div class="book-name">where is baby's belly button</div>
-                    <span class="book-tag info">Author: Karen Kat</span>
+                    <div class="book-name">big box of brilliant books - 8 Books</div>
+                    <span class="book-tag info">Walker Books · Leslie Patricelli Box Set</span>
                     <span class="book-tag theme">Early Learning</span>
-                    <span class="book-tag age">Recommended: 0–2 yrs</span>
+                    <span class="book-tag age">Recommended: 0–3 yrs</span>
                 </div>
             </div>
-            <!--5 liftflap-->
-            <div class="book-card" data-name="peek-a-baby" data-type="liftflap" data-theme="Early Learning">
-                <div class="book-pic" style="background-image:url('5.jpg');"></div>
+            <div class="book-card" data-name="bizzy bear christmas helper" data-type="pushpullbook" data-theme="Animal Theme">
+                <div class="book-pic" style="background-image:url('34.jpg');"></div>
                 <div class="book-text">
-                    <div class="book-name">peek-a-baby</div>
-                    <span class="book-tag info">Author: Karen Kat</span>
-                    <span class="book-tag theme">Early Learning</span>
-                    <span class="book-tag age">Recommended: 0–2 yrs</span>
+                    <div class="book-name">bizzy bear christmas helper</div>
+                    <span class="book-tag info">Benji Davies</span>
+                    <span class="book-tag theme">Animal Theme</span>
+                    <span class="book-tag age">Recommended: 1–4 yrs</span>
                 </div>
             </div>
-            <!--6 littlelib-->
+            <div class="book-card" data-name="bizzy bear deepsea diver" data-type="pushpullbook" data-theme="Animal Theme">
+                <div class="book-pic" style="background-image:url('33.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">bizzy bear deepsea diver</div>
+                    <span class="book-tag info">Benji Davies</span>
+                    <span class="book-tag theme">Animal Theme</span>
+                    <span class="book-tag age">Recommended: 1–4 yrs</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="bizzy bear space rocket" data-type="pushpullbook" data-theme="Transport">
+                <div class="book-pic" style="background-image:url('36.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">bizzy bear space rocket</div>
+                    <span class="book-tag info">Benji Davies</span>
+                    <span class="book-tag theme">Transport</span>
+                    <span class="book-tag age">Recommended: 1–4 yrs</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="bizzy bear zoo ranger" data-type="pushpullbook" data-theme="Animal Theme">
+                <div class="book-pic" style="background-image:url('35.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">bizzy bear zoo ranger</div>
+                    <span class="book-tag info">Benji Davies</span>
+                    <span class="book-tag theme">Animal Theme</span>
+                    <span class="book-tag age">Recommended: 1–4 yrs</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="brown bear,brown bear,what do you see" data-type="other" data-theme="Animal Theme">
+                <div class="book-pic" style="background-image:url('15.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">brown bear,brown bear,what do you see</div>
+                    <span class="book-tag info">Author: Bill Martin Jr / Eric Carle</span>
+                    <span class="book-tag theme">Animal Theme</span>
+                    <span class="book-tag age">Recommended: 0–4 yrs</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="bus" data-type="pushpullbook" data-theme="Transport">
+                <div class="book-pic" style="background-image:url('44.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">bus</div>
+                    <span class="book-tag info">Usborne Wind-up Book</span>
+                    <span class="book-tag theme">Transport</span>
+                    <span class="book-tag age">Recommended: 1–4 yrs</span>
+                </div>
+            </div>
+
+            <!-- C 开头 -->
+            <div class="book-card" data-name="clock" data-type="other" data-theme="Early Learning">
+                <div class="book-pic" style="background-image:url('7.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">clock</div>
+                    <span class="book-tag info">Toddler Learning</span>
+                    <span class="book-tag theme">Early Learning</span>
+                    <span class="book-tag age">Recommended: 2–5 yrs</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="color bus" data-type="pushpullbook" data-theme="Transport">
+                <div class="book-pic" style="background-image:url('52.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">color bus</div>
+                    <span class="book-tag info">Priddy Books · Press-out Puzzle</span>
+                    <span class="book-tag theme">Transport</span>
+                    <span class="book-tag age">Recommended: 1–4 yrs</span>
+                </div>
+            </div>
+
+            <!-- D 开头 -->
+            <div class="book-card" data-name="dear zoo" data-type="other" data-theme="Animal Theme">
+                <div class="book-pic" style="background-image:url('13.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">dear zoo</div>
+                    <span class="book-tag info">Author: Rod Campbell</span>
+                    <span class="book-tag theme">Animal Theme</span>
+                    <span class="book-tag age">Recommended: 0–3 yrs</span>
+                </div>
+            </div>
             <div class="book-card" data-name="Dinosaur Gift Box - 10 Books" data-type="littlelib" data-theme="Animal Theme">
                 <div class="book-pic" style="background-image:url('6.jpg');"></div>
                 <div class="book-text">
@@ -244,27 +322,153 @@
                     <span class="book-tag age">Recommended: 1–3 yrs</span>
                 </div>
             </div>
-            <!--7-->
-            <div class="book-card" data-name="clock" data-type="other" data-theme="Early Learning">
-                <div class="book-pic" style="background-image:url('7.jpg');"></div>
+            <div class="book-card" data-name="does a kangaroo have a mother, too" data-type="other" data-theme="Animal Theme">
+                <div class="book-pic" style="background-image:url('23.jpg');"></div>
                 <div class="book-text">
-                    <div class="book-name">clock</div>
-                    <span class="book-tag info">Toddler Learning</span>
-                    <span class="book-tag theme">Early Learning</span>
-                    <span class="book-tag age">Recommended: 2–5 yrs</span>
-                </div>
-            </div>
-            <!--8 littlelib-->
-            <div class="book-card" data-name="maisy's little library" data-type="littlelib" data-theme="Animal Theme">
-                <div class="book-pic" style="background-image:url('8.jpg');"></div>
-                <div class="book-text">
-                    <div class="book-name">maisy's little library</div>
-                    <span class="book-tag info">Walker Books</span>
+                    <div class="book-name">does a kangaroo have a mother, too</div>
+                    <span class="book-tag info">Author: Eric Carle</span>
                     <span class="book-tag theme">Animal Theme</span>
                     <span class="book-tag age">Recommended: 1–4 yrs</span>
                 </div>
             </div>
-            <!--9 littlelib-->
+
+            <!-- E 开头 -->
+            <div class="book-card" data-name="english apple - 10 Books" data-type="littlelib" data-theme="Early Learning">
+                <div class="book-pic" style="background-image:url('17.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">english apple - 10 Books</div>
+                    <span class="book-tag info">Bluesky</span>
+                    <span class="book-tag theme">Early Learning</span>
+                    <span class="book-tag age">Recommended: 1–3 yrs</span>
+                </div>
+            </div>
+
+            <!-- F 开头 -->
+            <div class="book-card" data-name="first 100 words" data-type="other" data-theme="Alphabet & Words">
+                <div class="book-pic" style="background-image:url('27.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">first 100 words</div>
+                    <span class="book-tag info">Priddy Books</span>
+                    <span class="book-tag theme">Alphabet & Words</span>
+                    <span class="book-tag age">Recommended: 1–3 yrs</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="five-minute bedtime stories" data-type="other" data-theme="Bedtime Story">
+                <div class="book-pic" style="background-image:url('45.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">five-minute bedtime stories</div>
+                    <span class="book-tag info">Usborne</span>
+                    <span class="book-tag theme">Bedtime Story</span>
+                    <span class="book-tag age">Recommended: 2–5 yrs</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="from head to toe" data-type="other" data-theme="Early Learning">
+                <div class="book-pic" style="background-image:url('16.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">from head to toe</div>
+                    <span class="book-tag info">Author: Eric Carle</span>
+                    <span class="book-tag theme">Early Learning</span>
+                    <span class="book-tag age">Recommended: 1–4 yrs</span>
+                </div>
+            </div>
+
+            <!-- G 开头 -->
+            <div class="book-card" data-name="giraffe is lost" data-type="other" data-theme="Animal Theme">
+                <div class="book-pic" style="background-image:url('50.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">giraffe is lost</div>
+                    <span class="book-tag info">Priddy Books</span>
+                    <span class="book-tag theme">Animal Theme</span>
+                    <span class="book-tag age">Recommended: 1–3 yrs</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="global babies" data-type="other" data-theme="Early Learning">
+                <div class="book-pic" style="background-image:url('2.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">global babies</div>
+                    <span class="book-tag info">Toddler Learning</span>
+                    <span class="book-tag theme">Early Learning</span>
+                    <span class="book-tag age">Recommended: 0–2 yrs</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="good night， I love you - 6 Books" data-type="littlelib" data-theme="Bedtime Story">
+                <div class="book-pic" style="background-image:url('19.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">good night， I love you - 6 Books</div>
+                    <span class="book-tag info">Author: Caroline Jayne Church</span>
+                    <span class="book-tag theme">Bedtime Story</span>
+                    <span class="book-tag age">Recommended: 0–3 yrs</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="goodnight moon" data-type="other" data-theme="Bedtime Story">
+                <div class="book-pic" style="background-image:url('3.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">goodnight moon</div>
+                    <span class="book-tag info">Author: Margaret Wise Brown</span>
+                    <span class="book-tag theme">Bedtime Story</span>
+                    <span class="book-tag age">Recommended: 0–3 yrs</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="guess how much I love you" data-type="other" data-theme="Family & Emotion">
+                <div class="book-pic" style="background-image:url('30.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">guess how much I love you</div>
+                    <span class="book-tag info">Sam McBratney</span>
+                    <span class="book-tag theme">Family & Emotion</span>
+                    <span class="book-tag age">Recommended: 2–5 yrs</span>
+                </div>
+            </div>
+
+            <!-- H 开头 -->
+            <div class="book-card" data-name="honey english pic books - 20 Books" data-type="littlelib" data-theme="Early Learning">
+                <div class="book-pic" style="background-image:url('20.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">honey english pic books - 20 Books</div>
+                    <span class="book-tag info">Season 1</span>
+                    <span class="book-tag theme">Early Learning</span>
+                    <span class="book-tag age">Recommended: 1–3 yrs</span>
+                </div>
+            </div>
+
+            <!-- I 开头 -->
+            <div class="book-card" data-name="I am a bunny" data-type="other" data-theme="Animal Theme">
+                <div class="book-pic" style="background-image:url('14.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">I am a bunny</div>
+                    <span class="book-tag info">Author: Richard Scarry</span>
+                    <span class="book-tag theme">Animal Theme</span>
+                    <span class="book-tag age">Recommended: 0–3 yrs</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="I am little fish" data-type="pushpullbook" data-theme="Animal Theme">
+                <div class="book-pic" style="background-image:url('54.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">I am little fish</div>
+                    <span class="book-tag info">Lucy Cousins · Finger Puppet</span>
+                    <span class="book-tag theme">Animal Theme</span>
+                    <span class="book-tag age">Recommended: 0–3 yrs</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="I kissed the baby" data-type="bw" data-theme="Family & Emotion">
+                <div class="book-pic" style="background-image:url('38.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">I kissed the baby</div>
+                    <span class="book-tag info">Mary Murphy</span>
+                    <span class="book-tag theme">Family & Emotion</span>
+                    <span class="book-tag age">Recommended: 0–12 months</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="it had to be you" data-type="bw" data-theme="Family & Emotion">
+                <div class="book-pic" style="background-image:url('37.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">it had to be you</div>
+                    <span class="book-tag info">Loryn Brantz</span>
+                    <span class="book-tag theme">Family & Emotion</span>
+                    <span class="book-tag age">Recommended: 0–12 months</span>
+                </div>
+            </div>
+
+            <!-- L 开头 -->
             <div class="book-card" data-name="little library - 4 Books" data-type="littlelib" data-theme="Early Learning">
                 <div class="book-pic" style="background-image:url('9.jpg');"></div>
                 <div class="book-text">
@@ -275,127 +479,6 @@
                     <span class="book-tag age">Recommended: 0–3 yrs</span>
                 </div>
             </div>
-            <!--10-->
-            <div class="book-card" data-name="my dad" data-type="other" data-theme="Family & Emotion">
-                <div class="book-pic" style="background-image:url('10.jpg');"></div>
-                <div class="book-text">
-                    <div class="book-name">my dad</div>
-                    <span class="book-tag info">Author: Anthony Browne</span>
-                    <span class="book-tag theme">Family & Emotion</span>
-                    <span class="book-tag age">Recommended: 1–5 yrs</span>
-                </div>
-            </div>
-            <!--11-->
-            <div class="book-card" data-name="my mum" data-type="other" data-theme="Family & Emotion">
-                <div class="book-pic" style="background-image:url('11.jpg');"></div>
-                <div class="book-text">
-                    <div class="book-name">my mum</div>
-                    <span class="book-tag info">Author: Anthony Browne</span>
-                    <span class="book-tag theme">Family & Emotion</span>
-                    <span class="book-tag age">Recommended: 1–5 yrs</span>
-                </div>
-            </div>
-            <!--12-->
-            <div class="book-card" data-name="the very hungry caterpillar" data-type="other" data-theme="Animal Theme">
-                <div class="book-pic" style="background-image:url('12.jpg');"></div>
-                <div class="book-text">
-                    <div class="book-name">the very hungry caterpillar</div>
-                    <span class="book-tag info">Author: Eric Carle</span>
-                    <span class="book-tag theme">Animal Theme</span>
-                    <span class="book-tag age">Recommended: 1–4 yrs</span>
-                </div>
-            </div>
-            <!--13-->
-            <div class="book-card" data-name="dear zoo" data-type="other" data-theme="Animal Theme">
-                <div class="book-pic" style="background-image:url('13.jpg');"></div>
-                <div class="book-text">
-                    <div class="book-name">dear zoo</div>
-                    <span class="book-tag info">Author: Rod Campbell</span>
-                    <span class="book-tag theme">Animal Theme</span>
-                    <span class="book-tag age">Recommended: 0–3 yrs</span>
-                </div>
-            </div>
-            <!--14-->
-            <div class="book-card" data-name="I am a bunny" data-type="other" data-theme="Animal Theme">
-                <div class="book-pic" style="background-image:url('14.jpg');"></div>
-                <div class="book-text">
-                    <div class="book-name">I am a bunny</div>
-                    <span class="book-tag info">Author: Richard Scarry</span>
-                    <span class="book-tag theme">Animal Theme</span>
-                    <span class="book-tag age">Recommended: 0–3 yrs</span>
-                </div>
-            </div>
-            <!--15-->
-            <div class="book-card" data-name="brown bear,brown bear,what do you see" data-type="other" data-theme="Animal Theme">
-                <div class="book-pic" style="background-image:url('15.jpg');"></div>
-                <div class="book-text">
-                    <div class="book-name">brown bear,brown bear,what do you see</div>
-                    <span class="book-tag info">Author: Bill Martin Jr / Eric Carle</span>
-                    <span class="book-tag theme">Animal Theme</span>
-                    <span class="book-tag age">Recommended: 0–4 yrs</span>
-                </div>
-            </div>
-            <!--16-->
-            <div class="book-card" data-name="from head to toe" data-type="other" data-theme="Early Learning">
-                <div class="book-pic" style="background-image:url('16.jpg');"></div>
-                <div class="book-text">
-                    <div class="book-name">from head to toe</div>
-                    <span class="book-tag info">Author: Eric Carle</span>
-                    <span class="book-tag theme">Early Learning</span>
-                    <span class="book-tag age">Recommended: 1–4 yrs</span>
-                </div>
-            </div>
-            <!--17 littlelib-->
-            <div class="book-card" data-name="english apple - 10 Books" data-type="littlelib" data-theme="Early Learning">
-                <div class="book-pic" style="background-image:url('17.jpg');"></div>
-                <div class="book-text">
-                    <div class="book-name">english apple - 10 Books</div>
-                    <span class="book-tag info">Bluesky</span>
-                    <span class="book-tag theme">Early Learning</span>
-                    <span class="book-tag age">Recommended: 1–3 yrs</span>
-                </div>
-            </div>
-            <!--18 -->
-            <div class="book-card" data-name="my first reading library - 50 Books" data-type="other" data-theme="Early Learning">
-                <div class="book-pic" style="background-image:url('18.jpg');"></div>
-                <div class="book-text">
-                    <div class="book-name">my first reading library - 50 Books</div>
-                    <span class="book-tag info">Usborne</span>
-                    <span class="book-tag theme">Early Learning</span>
-                    <span class="book-tag age">Recommended: 2–6 yrs</span>
-                </div>
-            </div>
-            <!--19 littlelib-->
-            <div class="book-card" data-name="good night， I love you - 6 Books" data-type="littlelib" data-theme="Bedtime Story">
-                <div class="book-pic" style="background-image:url('19.jpg');"></div>
-                <div class="book-text">
-                    <div class="book-name">good night， I love you - 6 Books</div>
-                    <span class="book-tag info">Author: Caroline Jayne Church</span>
-                    <span class="book-tag theme">Bedtime Story</span>
-                    <span class="book-tag age">Recommended: 0–3 yrs</span>
-                </div>
-            </div>
-            <!--20 littlelib-->
-            <div class="book-card" data-name="honey english pic books - 20 Books" data-type="littlelib" data-theme="Early Learning">
-                <div class="book-pic" style="background-image:url('20.jpg');"></div>
-                <div class="book-text">
-                    <div class="book-name">honey english pic books - 20 Books</div>
-                    <span class="book-tag info">Season 1</span>
-                    <span class="book-tag theme">Early Learning</span>
-                    <span class="book-tag age">Recommended: 1–3 yrs</span>
-                </div>
-            </div>
-            <!--21-->
-            <div class="book-card" data-name="see touch feel" data-type="other" data-theme="Early Learning">
-                <div class="book-pic" style="background-image:url('21.jpg');"></div>
-                <div class="book-text">
-                    <div class="book-name">see touch feel</div>
-                    <span class="book-tag info">Priddy Books · Sensory Book</span>
-                    <span class="book-tag theme">Early Learning</span>
-                    <span class="book-tag age">Recommended: 0–2 yrs</span>
-                </div>
-            </div>
-            <!--22 bw-->
             <div class="book-card" data-name="look look" data-type="bw" data-theme="Early Learning">
                 <div class="book-pic" style="background-image:url('22.jpg');"></div>
                 <div class="book-text">
@@ -405,97 +488,82 @@
                     <span class="book-tag age">Recommended: 0–18 months</span>
                 </div>
             </div>
-            <!--23-->
-            <div class="book-card" data-name="does a kangaroo have a mother, too" data-type="other" data-theme="Animal Theme">
-                <div class="book-pic" style="background-image:url('23.jpg');"></div>
+
+            <!-- M 开头 -->
+            <div class="book-card" data-name="making faces" data-type="other" data-theme="Early Learning">
+                <div class="book-pic" style="background-image:url('1.jpg');"></div>
                 <div class="book-text">
-                    <div class="book-name">does a kangaroo have a mother, too</div>
-                    <span class="book-tag info">Author: Eric Carle</span>
-                    <span class="book-tag theme">Animal Theme</span>
-                    <span class="book-tag age">Recommended: 1–4 yrs</span>
-                </div>
-            </div>
-            <!--24-->
-            <div class="book-card" data-name="the very busy spider" data-type="other" data-theme="Animal Theme">
-                <div class="book-pic" style="background-image:url('24.jpg');"></div>
-                <div class="book-text">
-                    <div class="book-name">the very busy spider</div>
-                    <span class="book-tag info">Author: Eric Carle</span>
-                    <span class="book-tag theme">Animal Theme</span>
-                    <span class="book-tag age">Recommended: 1–4 yrs</span>
-                </div>
-            </div>
-            <!--25-->
-            <div class="book-card" data-name="today is Monday" data-type="other" data-theme="Early Learning">
-                <div class="book-pic" style="background-image:url('25.jpg');"></div>
-                <div class="book-text">
-                    <div class="book-name">today is Monday</div>
-                    <span class="book-tag info">Author: Eric Carle</span>
+                    <div class="book-name">making faces</div>
+                    <span class="book-tag info">Toddler Learning</span>
                     <span class="book-tag theme">Early Learning</span>
-                    <span class="book-tag age">Recommended: 1–4 yrs</span>
-                </div>
-            </div>
-            <!--26-->
-            <div class="book-card" data-name="polar bear,polar bear,what do you hear" data-type="other" data-theme="Animal Theme">
-                <div class="book-pic" style="background-image:url('26.jpg');"></div>
-                <div class="book-text">
-                    <div class="book-name">polar bear,polar bear,what do you hear</div>
-                    <span class="book-tag info">Author: Eric Carle</span>
-                    <span class="book-tag theme">Animal Theme</span>
-                    <span class="book-tag age">Recommended: 0–4 yrs</span>
-                </div>
-            </div>
-            <!--27-->
-            <div class="book-card" data-name="first 100 words" data-type="other" data-theme="Alphabet & Words">
-                <div class="book-pic" style="background-image:url('27.jpg');"></div>
-                <div class="book-text">
-                    <div class="book-name">first 100 words</div>
-                    <span class="book-tag info">Priddy Books</span>
-                    <span class="book-tag theme">Alphabet & Words</span>
-                    <span class="book-tag age">Recommended: 1–3 yrs</span>
-                </div>
-            </div>
-            <!--28 noisybook-->
-            <div class="book-card" data-name="baby's very first noisy book farm" data-type="noisybook" data-theme="Animal Theme">
-                <div class="book-pic" style="background-image:url('28.jpg');"></div>
-                <div class="book-text">
-                    <div class="book-name">baby's very first noisy book farm</div>
-                    <span class="book-tag info">Usborne</span>
-                    <span class="book-tag theme">Animal Theme</span>
                     <span class="book-tag age">Recommended: 0–3 yrs</span>
                 </div>
             </div>
-            <!--29 noisybook-->
-            <div class="book-card" data-name="the animal orchestra plays tchaikovsky" data-type="noisybook" data-theme="Animal Theme">
-                <div class="book-pic" style="background-image:url('29.jpg');"></div>
+            <div class="book-card" data-name="maisy's little library" data-type="littlelib" data-theme="Animal Theme">
+                <div class="book-pic" style="background-image:url('8.jpg');"></div>
                 <div class="book-text">
-                    <div class="book-name">the animal orchestra plays tchaikovsky</div>
-                    <span class="book-tag info">Usborne</span>
+                    <div class="book-name">maisy's little library</div>
+                    <span class="book-tag info">Walker Books</span>
                     <span class="book-tag theme">Animal Theme</span>
                     <span class="book-tag age">Recommended: 1–4 yrs</span>
                 </div>
             </div>
-            <!--30-->
-            <div class="book-card" data-name="guess how much I love you" data-type="other" data-theme="Family & Emotion">
-                <div class="book-pic" style="background-image:url('30.jpg');"></div>
+            <div class="book-card" data-name="my dad" data-type="other" data-theme="Family & Emotion">
+                <div class="book-pic" style="background-image:url('10.jpg');"></div>
                 <div class="book-text">
-                    <div class="book-name">guess how much I love you</div>
-                    <span class="book-tag info">Sam McBratney</span>
+                    <div class="book-name">my dad</div>
+                    <span class="book-tag info">Author: Anthony Browne</span>
                     <span class="book-tag theme">Family & Emotion</span>
-                    <span class="book-tag age">Recommended: 2–5 yrs</span>
+                    <span class="book-tag age">Recommended: 1–5 yrs</span>
                 </div>
             </div>
-            <!--31 noisybook-->
-            <div class="book-card" data-name="baby's very first musical play book" data-type="noisybook" data-theme="Early Learning">
-                <div class="book-pic" style="background-image:url('31.jpg');"></div>
+            <div class="book-card" data-name="my first reading library - 50 Books" data-type="other" data-theme="Early Learning">
+                <div class="book-pic" style="background-image:url('18.jpg');"></div>
                 <div class="book-text">
-                    <div class="book-name">baby's very first musical play book</div>
+                    <div class="book-name">my first reading library - 50 Books</div>
                     <span class="book-tag info">Usborne</span>
+                    <span class="book-tag theme">Early Learning</span>
+                    <span class="book-tag age">Recommended: 2–6 yrs</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="my mum" data-type="other" data-theme="Family & Emotion">
+                <div class="book-pic" style="background-image:url('11.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">my mum</div>
+                    <span class="book-tag info">Author: Anthony Browne</span>
+                    <span class="book-tag theme">Family & Emotion</span>
+                    <span class="book-tag age">Recommended: 1–5 yrs</span>
+                </div>
+            </div>
+
+            <!-- P 开头 -->
+            <div class="book-card" data-name="peek-a-baby" data-type="liftflap" data-theme="Early Learning">
+                <div class="book-pic" style="background-image:url('5.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">peek-a-baby</div>
+                    <span class="book-tag info">Author: Karen Kat</span>
+                    <span class="book-tag theme">Early Learning</span>
+                    <span class="book-tag age">Recommended: 0–2 yrs</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="peekaboo santa" data-type="liftflap" data-theme="Early Learning">
+                <div class="book-pic" style="background-image:url('51.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">peekaboo santa</div>
+                    <span class="book-tag info">Nosy Crow</span>
                     <span class="book-tag theme">Early Learning</span>
                     <span class="book-tag age">Recommended: 0–3 yrs</span>
                 </div>
             </div>
-            <!--32-->
+            <div class="book-card" data-name="pet" data-type="other" data-theme="Animal Theme">
+                <div class="book-pic" style="background-image:url('53.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">pet</div>
+                    <span class="book-tag info">Matthew Van Fleet</span>
+                    <span class="book-tag theme">Animal Theme</span>
+                    <span class="book-tag age">Recommended: 1–4 yrs</span>
+                </div>
+            </div>
             <div class="book-card" data-name="pets" data-type="other" data-theme="Animal Theme">
                 <div class="book-pic" style="background-image:url('32.jpg');"></div>
                 <div class="book-text">
@@ -505,87 +573,26 @@
                     <span class="book-tag age">Recommended: 1–3 yrs</span>
                 </div>
             </div>
-            <!--33 pushpullbook bizzy-->
-            <div class="book-card" data-name="bizzy bear deepsea diver" data-type="pushpullbook" data-theme="Animal Theme">
-                <div class="book-pic" style="background-image:url('33.jpg');"></div>
+            <div class="book-card" data-name="polar bear,polar bear,what do you hear" data-type="other" data-theme="Animal Theme">
+                <div class="book-pic" style="background-image:url('26.jpg');"></div>
                 <div class="book-text">
-                    <div class="book-name">bizzy bear deepsea diver</div>
-                    <span class="book-tag info">Benji Davies</span>
+                    <div class="book-name">polar bear,polar bear,what do you hear</div>
+                    <span class="book-tag info">Author: Eric Carle</span>
                     <span class="book-tag theme">Animal Theme</span>
-                    <span class="book-tag age">Recommended: 1–4 yrs</span>
+                    <span class="book-tag age">Recommended: 0–4 yrs</span>
                 </div>
             </div>
-            <!--34 pushpullbook bizzy-->
-            <div class="book-card" data-name="bizzy bear christmas helper" data-type="pushpullbook" data-theme="Animal Theme">
-                <div class="book-pic" style="background-image:url('34.jpg');"></div>
+            <div class="book-card" data-name="press here" data-type="other" data-theme="Early Learning">
+                <div class="book-pic" style="background-image:url('46.jpg');"></div>
                 <div class="book-text">
-                    <div class="book-name">bizzy bear christmas helper</div>
-                    <span class="book-tag info">Benji Davies</span>
-                    <span class="book-tag theme">Animal Theme</span>
-                    <span class="book-tag age">Recommended: 1–4 yrs</span>
+                    <div class="book-name">press here</div>
+                    <span class="book-tag info">Hervé Tullet</span>
+                    <span class="book-tag theme">Early Learning</span>
+                    <span class="book-tag age">Recommended: 2–6 yrs</span>
                 </div>
             </div>
-            <!--35 pushpullbook bizzy-->
-            <div class="book-card" data-name="bizzy bear zoo ranger" data-type="pushpullbook" data-theme="Animal Theme">
-                <div class="book-pic" style="background-image:url('35.jpg');"></div>
-                <div class="book-text">
-                    <div class="book-name">bizzy bear zoo ranger</div>
-                    <span class="book-tag info">Benji Davies</span>
-                    <span class="book-tag theme">Animal Theme</span>
-                    <span class="book-tag age">Recommended: 1–4 yrs</span>
-                </div>
-            </div>
-            <!--36 pushpullbook bizzy-->
-            <div class="book-card" data-name="bizzy bear space rocket" data-type="pushpullbook" data-theme="Transport">
-                <div class="book-pic" style="background-image:url('36.jpg');"></div>
-                <div class="book-text">
-                    <div class="book-name">bizzy bear space rocket</div>
-                    <span class="book-tag info">Benji Davies</span>
-                    <span class="book-tag theme">Transport</span>
-                    <span class="book-tag age">Recommended: 1–4 yrs</span>
-                </div>
-            </div>
-            <!--37 bw -->
-            <div class="book-card" data-name="it had to be you" data-type="bw" data-theme="Family & Emotion">
-                <div class="book-pic" style="background-image:url('37.jpg');"></div>
-                <div class="book-text">
-                    <div class="book-name">it had to be you</div>
-                    <span class="book-tag info">Loryn Brantz</span>
-                    <span class="book-tag theme">Family & Emotion</span>
-                    <span class="book-tag age">Recommended: 0–12 months</span>
-                </div>
-            </div>
-            <!--38 bw -->
-            <div class="book-card" data-name="I kissed the baby" data-type="bw" data-theme="Family & Emotion">
-                <div class="book-pic" style="background-image:url('38.jpg');"></div>
-                <div class="book-text">
-                    <div class="book-name">I kissed the baby</div>
-                    <span class="book-tag info">Mary Murphy</span>
-                    <span class="book-tag theme">Family & Emotion</span>
-                    <span class="book-tag age">Recommended: 0–12 months</span>
-                </div>
-            </div>
-            <!--39 pushpullbook-->
-            <div class="book-card" data-name="alphabet" data-type="pushpullbook" data-theme="Alphabet & Words">
-                <div class="book-pic" style="background-image:url('39.jpg');"></div>
-                <div class="book-text">
-                    <div class="book-name">alphabet</div>
-                    <span class="book-tag info">Matthew Van Fleet</span>
-                    <span class="book-tag theme">Alphabet & Words</span>
-                    <span class="book-tag age">Recommended: 1–4 yrs</span>
-                </div>
-            </div>
-            <!--40 noisybook-->
-            <div class="book-card" data-name="things that go sound book" data-type="noisybook" data-theme="Transport">
-                <div class="book-pic" style="background-image:url('40.jpg');"></div>
-                <div class="book-text">
-                    <div class="book-name">things that go sound book</div>
-                    <span class="book-tag info">Usborne</span>
-                    <span class="book-tag theme">Transport</span>
-                    <span class="book-tag age">Recommended: 0–3 yrs</span>
-                </div>
-            </div>
-            <!--41 pushpullbook-->
+
+            <!-- R 开头 -->
             <div class="book-card" data-name="red car,green car" data-type="pushpullbook" data-theme="Transport">
                 <div class="book-pic" style="background-image:url('41.jpg');"></div>
                 <div class="book-text">
@@ -595,17 +602,17 @@
                     <span class="book-tag age">Recommended: 0–3 yrs</span>
                 </div>
             </div>
-            <!--42 liftflap-->
-            <div class="book-card" data-name="where's spot" data-type="liftflap" data-theme="Animal Theme">
-                <div class="book-pic" style="background-image:url('42.jpg');"></div>
+
+            <!-- S 开头 -->
+            <div class="book-card" data-name="see touch feel" data-type="other" data-theme="Early Learning">
+                <div class="book-pic" style="background-image:url('21.jpg');"></div>
                 <div class="book-text">
-                    <div class="book-name">where's spot</div>
-                    <span class="book-tag info">Eric Hill</span>
-                    <span class="book-tag theme">Animal Theme</span>
-                    <span class="book-tag age">Recommended: 0–3 yrs</span>
+                    <div class="book-name">see touch feel</div>
+                    <span class="book-tag info">Priddy Books · Sensory Book</span>
+                    <span class="book-tag theme">Early Learning</span>
+                    <span class="book-tag age">Recommended: 0–2 yrs</span>
                 </div>
             </div>
-            <!--43 pushpullbook-->
             <div class="book-card" data-name="see,touch,feel busy book" data-type="pushpullbook" data-theme="Early Learning">
                 <div class="book-pic" style="background-image:url('43.jpg');"></div>
                 <div class="book-text">
@@ -613,6 +620,91 @@
                     <span class="book-tag info">Priddy Books</span>
                     <span class="book-tag theme">Early Learning</span>
                     <span class="book-tag age">Recommended: 1–4 yrs</span>
+                </div>
+            </div>
+
+            <!-- T 开头 -->
+            <div class="book-card" data-name="the animal orchestra plays tchaikovsky" data-type="noisybook" data-theme="Animal Theme">
+                <div class="book-pic" style="background-image:url('29.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">the animal orchestra plays tchaikovsky</div>
+                    <span class="book-tag info">Usborne</span>
+                    <span class="book-tag theme">Animal Theme</span>
+                    <span class="book-tag age">Recommended: 1–4 yrs</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="the tiger who came to tea" data-type="other" data-theme="Family & Emotion">
+                <div class="book-pic" style="background-image:url('47.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">the tiger who came to tea</div>
+                    <span class="book-tag info">Author: Judith Kerr</span>
+                    <span class="book-tag theme">Family & Emotion</span>
+                    <span class="book-tag age">Recommended: 2–5 yrs</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="the very busy spider" data-type="other" data-theme="Animal Theme">
+                <div class="book-pic" style="background-image:url('24.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">the very busy spider</div>
+                    <span class="book-tag info">Author: Eric Carle</span>
+                    <span class="book-tag theme">Animal Theme</span>
+                    <span class="book-tag age">Recommended: 1–4 yrs</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="the very hungry caterpillar" data-type="other" data-theme="Animal Theme">
+                <div class="book-pic" style="background-image:url('12.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">the very hungry caterpillar</div>
+                    <span class="book-tag info">Author: Eric Carle</span>
+                    <span class="book-tag theme">Animal Theme</span>
+                    <span class="book-tag age">Recommended: 1–4 yrs</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="things that go sound book" data-type="noisybook" data-theme="Transport">
+                <div class="book-pic" style="background-image:url('40.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">things that go sound book</div>
+                    <span class="book-tag info">Usborne</span>
+                    <span class="book-tag theme">Transport</span>
+                    <span class="book-tag age">Recommended: 0–3 yrs</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="today is Monday" data-type="other" data-theme="Early Learning">
+                <div class="book-pic" style="background-image:url('25.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">today is Monday</div>
+                    <span class="book-tag info">Author: Eric Carle</span>
+                    <span class="book-tag theme">Early Learning</span>
+                    <span class="book-tag age">Recommended: 1–4 yrs</span>
+                </div>
+            </div>
+
+            <!-- W 开头 -->
+            <div class="book-card" data-name="we're going on a bear hunt" data-type="other" data-theme="Animal Theme">
+                <div class="book-pic" style="background-image:url('49.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">we're going on a bear hunt</div>
+                    <span class="book-tag info">Author: Michael Rosen</span>
+                    <span class="book-tag theme">Animal Theme</span>
+                    <span class="book-tag age">Recommended: 2–5 yrs</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="where is baby's belly button" data-type="liftflap" data-theme="Early Learning">
+                <div class="book-pic" style="background-image:url('4.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">where is baby's belly button</div>
+                    <span class="book-tag info">Author: Karen Kat</span>
+                    <span class="book-tag theme">Early Learning</span>
+                    <span class="book-tag age">Recommended: 0–2 yrs</span>
+                </div>
+            </div>
+            <div class="book-card" data-name="where's spot" data-type="liftflap" data-theme="Animal Theme">
+                <div class="book-pic" style="background-image:url('42.jpg');"></div>
+                <div class="book-text">
+                    <div class="book-name">where's spot</div>
+                    <span class="book-tag info">Eric Hill</span>
+                    <span class="book-tag theme">Animal Theme</span>
+                    <span class="book-tag age">Recommended: 0–3 yrs</span>
                 </div>
             </div>
         </div>
@@ -645,7 +737,6 @@
             let key = input.value.toLowerCase();
             cards.forEach(card=>{
                 let name = card.dataset.name.toLowerCase();
-                // 搜索同时匹配书名，未来可以扩展支持搜索theme
                 card.classList.toggle("hide", !name.includes(key));
             })
         }
