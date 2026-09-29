@@ -14,7 +14,6 @@
             min-height:100vh;
             position:relative;
         }
-        /* 底层背景插画 */
         body::after{
             content:"";
             position:fixed;
@@ -29,7 +28,6 @@
             background-attachment:fixed;
             z-index:-2;
         }
-        /* 中间浅绿色遮罩 */
         body::before{
             content:"";
             position:fixed;
@@ -174,12 +172,15 @@
         <div class="nav-item" data-val="liftflap">Lift-the-Flap Books</div>
         <div class="nav-item" data-val="noisybook">Sound / Noisy Books</div>
         <div class="nav-item" data-val="pushpullbook">Push-Pull Busy Books</div>
+        <div class="nav-item" data-val="animalstory">Animal Picture Books</div>
+        <div class="nav-item" data-val="earlylearning">Early Learning Books</div>
+        <div class="nav-item" data-val="bedtimeemotion">Bedtime & Emotion Books</div>
     </nav>
 
     <div class="container">
-        <h2 class="title-line">📖 All Picture Books (Total: 55 · Sorted A-Z)</h2>
+        <h2 class="title-line">📖 All Picture Books (Total: 55 · Sorted A–Z)</h2>
         <div class="book-list" id="worm-list">
-            <!-- A 开头 -->
+            <!-- A -->
             <div class="book-card" data-name="alphabet" data-type="pushpullbook" data-theme="Alphabet & Words">
                 <div class="book-pic" style="background-image:url('39.jpg');"></div>
                 <div class="book-text">
@@ -190,8 +191,8 @@
                 </div>
             </div>
 
-            <!-- B 开头 -->
-            <div class="book-card" data-name="baby loves" data-type="other" data-theme="Early Learning">
+            <!-- B -->
+            <div class="book-card" data-name="baby loves" data-type="earlylearning" data-theme="Early Learning">
                 <div class="book-pic" style="background-image:url('48.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">baby loves</div>
@@ -263,7 +264,7 @@
                     <span class="book-tag age">Recommended: 1–4 yrs</span>
                 </div>
             </div>
-            <div class="book-card" data-name="brown bear,brown bear,what do you see" data-type="other" data-theme="Animal Theme">
+            <div class="book-card" data-name="brown bear,brown bear,what do you see" data-type="animalstory" data-theme="Animal Theme">
                 <div class="book-pic" style="background-image:url('15.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">brown bear,brown bear,what do you see</div>
@@ -282,8 +283,8 @@
                 </div>
             </div>
 
-            <!-- C 开头 -->
-            <div class="book-card" data-name="clock" data-type="other" data-theme="Early Learning">
+            <!-- C -->
+            <div class="book-card" data-name="clock" data-type="earlylearning" data-theme="Early Learning">
                 <div class="book-pic" style="background-image:url('7.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">clock</div>
@@ -302,8 +303,8 @@
                 </div>
             </div>
 
-            <!-- D 开头 -->
-            <div class="book-card" data-name="dear zoo" data-type="other" data-theme="Animal Theme">
+            <!-- D -->
+            <div class="book-card" data-name="dear zoo" data-type="animalstory" data-theme="Animal Theme">
                 <div class="book-pic" style="background-image:url('13.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">dear zoo</div>
@@ -322,7 +323,7 @@
                     <span class="book-tag age">Recommended: 1–3 yrs</span>
                 </div>
             </div>
-            <div class="book-card" data-name="does a kangaroo have a mother, too" data-type="other" data-theme="Animal Theme">
+            <div class="book-card" data-name="does a kangaroo have a mother, too" data-type="animalstory" data-theme="Animal Theme">
                 <div class="book-pic" style="background-image:url('23.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">does a kangaroo have a mother, too</div>
@@ -332,7 +333,7 @@
                 </div>
             </div>
 
-            <!-- E 开头 -->
+            <!-- E -->
             <div class="book-card" data-name="english apple - 10 Books" data-type="littlelib" data-theme="Early Learning">
                 <div class="book-pic" style="background-image:url('17.jpg');"></div>
                 <div class="book-text">
@@ -343,8 +344,8 @@
                 </div>
             </div>
 
-            <!-- F 开头 -->
-            <div class="book-card" data-name="first 100 words" data-type="other" data-theme="Alphabet & Words">
+            <!-- F -->
+            <div class="book-card" data-name="first 100 words" data-type="earlylearning" data-theme="Alphabet & Words">
                 <div class="book-pic" style="background-image:url('27.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">first 100 words</div>
@@ -353,7 +354,7 @@
                     <span class="book-tag age">Recommended: 1–3 yrs</span>
                 </div>
             </div>
-            <div class="book-card" data-name="five-minute bedtime stories" data-type="other" data-theme="Bedtime Story">
+            <div class="book-card" data-name="five-minute bedtime stories" data-type="bedtimeemotion" data-theme="Bedtime Story">
                 <div class="book-pic" style="background-image:url('45.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">five-minute bedtime stories</div>
@@ -362,7 +363,7 @@
                     <span class="book-tag age">Recommended: 2–5 yrs</span>
                 </div>
             </div>
-            <div class="book-card" data-name="from head to toe" data-type="other" data-theme="Early Learning">
+            <div class="book-card" data-name="from head to toe" data-type="earlylearning" data-theme="Early Learning">
                 <div class="book-pic" style="background-image:url('16.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">from head to toe</div>
@@ -372,8 +373,8 @@
                 </div>
             </div>
 
-            <!-- G 开头 -->
-            <div class="book-card" data-name="giraffe is lost" data-type="other" data-theme="Animal Theme">
+            <!-- G -->
+            <div class="book-card" data-name="giraffe is lost" data-type="animalstory" data-theme="Animal Theme">
                 <div class="book-pic" style="background-image:url('50.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">giraffe is lost</div>
@@ -382,7 +383,7 @@
                     <span class="book-tag age">Recommended: 1–3 yrs</span>
                 </div>
             </div>
-            <div class="book-card" data-name="global babies" data-type="other" data-theme="Early Learning">
+            <div class="book-card" data-name="global babies" data-type="earlylearning" data-theme="Early Learning">
                 <div class="book-pic" style="background-image:url('2.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">global babies</div>
@@ -400,7 +401,7 @@
                     <span class="book-tag age">Recommended: 0–3 yrs</span>
                 </div>
             </div>
-            <div class="book-card" data-name="goodnight moon" data-type="other" data-theme="Bedtime Story">
+            <div class="book-card" data-name="goodnight moon" data-type="bedtimeemotion" data-theme="Bedtime Story">
                 <div class="book-pic" style="background-image:url('3.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">goodnight moon</div>
@@ -409,7 +410,7 @@
                     <span class="book-tag age">Recommended: 0–3 yrs</span>
                 </div>
             </div>
-            <div class="book-card" data-name="guess how much I love you" data-type="other" data-theme="Family & Emotion">
+            <div class="book-card" data-name="guess how much I love you" data-type="bedtimeemotion" data-theme="Family & Emotion">
                 <div class="book-pic" style="background-image:url('30.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">guess how much I love you</div>
@@ -419,7 +420,7 @@
                 </div>
             </div>
 
-            <!-- H 开头 -->
+            <!-- H -->
             <div class="book-card" data-name="honey english pic books - 20 Books" data-type="littlelib" data-theme="Early Learning">
                 <div class="book-pic" style="background-image:url('20.jpg');"></div>
                 <div class="book-text">
@@ -430,8 +431,8 @@
                 </div>
             </div>
 
-            <!-- I 开头 -->
-            <div class="book-card" data-name="I am a bunny" data-type="other" data-theme="Animal Theme">
+            <!-- I -->
+            <div class="book-card" data-name="I am a bunny" data-type="animalstory" data-theme="Animal Theme">
                 <div class="book-pic" style="background-image:url('14.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">I am a bunny</div>
@@ -468,7 +469,7 @@
                 </div>
             </div>
 
-            <!-- L 开头 -->
+            <!-- L -->
             <div class="book-card" data-name="little library - 4 Books" data-type="littlelib" data-theme="Early Learning">
                 <div class="book-pic" style="background-image:url('9.jpg');"></div>
                 <div class="book-text">
@@ -489,8 +490,8 @@
                 </div>
             </div>
 
-            <!-- M 开头 -->
-            <div class="book-card" data-name="making faces" data-type="other" data-theme="Early Learning">
+            <!-- M -->
+            <div class="book-card" data-name="making faces" data-type="earlylearning" data-theme="Early Learning">
                 <div class="book-pic" style="background-image:url('1.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">making faces</div>
@@ -508,7 +509,7 @@
                     <span class="book-tag age">Recommended: 1–4 yrs</span>
                 </div>
             </div>
-            <div class="book-card" data-name="my dad" data-type="other" data-theme="Family & Emotion">
+            <div class="book-card" data-name="my dad" data-type="bedtimeemotion" data-theme="Family & Emotion">
                 <div class="book-pic" style="background-image:url('10.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">my dad</div>
@@ -517,7 +518,7 @@
                     <span class="book-tag age">Recommended: 1–5 yrs</span>
                 </div>
             </div>
-            <div class="book-card" data-name="my first reading library - 50 Books" data-type="other" data-theme="Early Learning">
+            <div class="book-card" data-name="my first reading library - 50 Books" data-type="earlylearning" data-theme="Early Learning">
                 <div class="book-pic" style="background-image:url('18.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">my first reading library - 50 Books</div>
@@ -526,7 +527,7 @@
                     <span class="book-tag age">Recommended: 2–6 yrs</span>
                 </div>
             </div>
-            <div class="book-card" data-name="my mum" data-type="other" data-theme="Family & Emotion">
+            <div class="book-card" data-name="my mum" data-type="bedtimeemotion" data-theme="Family & Emotion">
                 <div class="book-pic" style="background-image:url('11.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">my mum</div>
@@ -536,7 +537,7 @@
                 </div>
             </div>
 
-            <!-- P 开头 -->
+            <!-- P -->
             <div class="book-card" data-name="peek-a-baby" data-type="liftflap" data-theme="Early Learning">
                 <div class="book-pic" style="background-image:url('5.jpg');"></div>
                 <div class="book-text">
@@ -555,7 +556,7 @@
                     <span class="book-tag age">Recommended: 0–3 yrs</span>
                 </div>
             </div>
-            <div class="book-card" data-name="pet" data-type="other" data-theme="Animal Theme">
+            <div class="book-card" data-name="pet" data-type="animalstory" data-theme="Animal Theme">
                 <div class="book-pic" style="background-image:url('53.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">pet</div>
@@ -564,7 +565,7 @@
                     <span class="book-tag age">Recommended: 1–4 yrs</span>
                 </div>
             </div>
-            <div class="book-card" data-name="pets" data-type="other" data-theme="Animal Theme">
+            <div class="book-card" data-name="pets" data-type="animalstory" data-theme="Animal Theme">
                 <div class="book-pic" style="background-image:url('32.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">pets</div>
@@ -573,7 +574,7 @@
                     <span class="book-tag age">Recommended: 1–3 yrs</span>
                 </div>
             </div>
-            <div class="book-card" data-name="polar bear,polar bear,what do you hear" data-type="other" data-theme="Animal Theme">
+            <div class="book-card" data-name="polar bear,polar bear,what do you hear" data-type="animalstory" data-theme="Animal Theme">
                 <div class="book-pic" style="background-image:url('26.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">polar bear,polar bear,what do you hear</div>
@@ -582,7 +583,7 @@
                     <span class="book-tag age">Recommended: 0–4 yrs</span>
                 </div>
             </div>
-            <div class="book-card" data-name="press here" data-type="other" data-theme="Early Learning">
+            <div class="book-card" data-name="press here" data-type="earlylearning" data-theme="Early Learning">
                 <div class="book-pic" style="background-image:url('46.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">press here</div>
@@ -592,7 +593,7 @@
                 </div>
             </div>
 
-            <!-- R 开头 -->
+            <!-- R -->
             <div class="book-card" data-name="red car,green car" data-type="pushpullbook" data-theme="Transport">
                 <div class="book-pic" style="background-image:url('41.jpg');"></div>
                 <div class="book-text">
@@ -603,8 +604,8 @@
                 </div>
             </div>
 
-            <!-- S 开头 -->
-            <div class="book-card" data-name="see touch feel" data-type="other" data-theme="Early Learning">
+            <!-- S -->
+            <div class="book-card" data-name="see touch feel" data-type="earlylearning" data-theme="Early Learning">
                 <div class="book-pic" style="background-image:url('21.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">see touch feel</div>
@@ -623,7 +624,7 @@
                 </div>
             </div>
 
-            <!-- T 开头 -->
+            <!-- T -->
             <div class="book-card" data-name="the animal orchestra plays tchaikovsky" data-type="noisybook" data-theme="Animal Theme">
                 <div class="book-pic" style="background-image:url('29.jpg');"></div>
                 <div class="book-text">
@@ -633,7 +634,7 @@
                     <span class="book-tag age">Recommended: 1–4 yrs</span>
                 </div>
             </div>
-            <div class="book-card" data-name="the tiger who came to tea" data-type="other" data-theme="Family & Emotion">
+            <div class="book-card" data-name="the tiger who came to tea" data-type="bedtimeemotion" data-theme="Family & Emotion">
                 <div class="book-pic" style="background-image:url('47.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">the tiger who came to tea</div>
@@ -642,7 +643,7 @@
                     <span class="book-tag age">Recommended: 2–5 yrs</span>
                 </div>
             </div>
-            <div class="book-card" data-name="the very busy spider" data-type="other" data-theme="Animal Theme">
+            <div class="book-card" data-name="the very busy spider" data-type="animalstory" data-theme="Animal Theme">
                 <div class="book-pic" style="background-image:url('24.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">the very busy spider</div>
@@ -651,7 +652,7 @@
                     <span class="book-tag age">Recommended: 1–4 yrs</span>
                 </div>
             </div>
-            <div class="book-card" data-name="the very hungry caterpillar" data-type="other" data-theme="Animal Theme">
+            <div class="book-card" data-name="the very hungry caterpillar" data-type="animalstory" data-theme="Animal Theme">
                 <div class="book-pic" style="background-image:url('12.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">the very hungry caterpillar</div>
@@ -669,7 +670,7 @@
                     <span class="book-tag age">Recommended: 0–3 yrs</span>
                 </div>
             </div>
-            <div class="book-card" data-name="today is Monday" data-type="other" data-theme="Early Learning">
+            <div class="book-card" data-name="today is Monday" data-type="earlylearning" data-theme="Early Learning">
                 <div class="book-pic" style="background-image:url('25.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">today is Monday</div>
@@ -679,8 +680,8 @@
                 </div>
             </div>
 
-            <!-- W 开头 -->
-            <div class="book-card" data-name="we're going on a bear hunt" data-type="other" data-theme="Animal Theme">
+            <!-- W -->
+            <div class="book-card" data-name="we're going on a bear hunt" data-type="animalstory" data-theme="Animal Theme">
                 <div class="book-pic" style="background-image:url('49.jpg');"></div>
                 <div class="book-text">
                     <div class="book-name">we're going on a bear hunt</div>
